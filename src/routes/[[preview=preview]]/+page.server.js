@@ -6,7 +6,7 @@ import { dev } from '$app/environment';
 export const prerender = false;
 
 export async function load({ fetch, cookies }) {
-	const client = createClient({ fetch });
+	const client = createClient({ cookies });
 	// const client = createClient({ fetch, cookies });
 
 	console.log();
